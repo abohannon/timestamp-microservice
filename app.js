@@ -23,4 +23,6 @@ app.get('/:time', (req, res) => {
   res.status(200).json(time(data.time));
 });
 
-app.listen(PORT);
+app.listen(PORT, () => {
+  console.log(`Server is up on port ${PORT}`)
+});
