@@ -11,7 +11,7 @@ If it does not contain a date or Unix timestamp, it returns null for those prope
 const express = require('express');
 const app = express();
 
-const PORT = process.env.PORT || 3001;
+const port = process.env.PORT || 3001;
 
 const time = require('./time.js');
 
@@ -23,6 +23,6 @@ app.get('/:time', (req, res) => {
   res.status(200).json(time(data.time));
 });
 
-app.listen(PORT, () => {
+app.listen(port, () => {
   console.log(`Server is up on port ${PORT}`)
 });
