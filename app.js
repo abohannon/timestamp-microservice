@@ -6,11 +6,6 @@ If it does, it returns both the Unix timestamp and the natural language form of 
 
 If it does not contain a date or Unix timestamp, it returns null for those properties.
 
-1. Create a function that takes in a date and converts it to real time or unix time
-
-2. Incorporate the function in app.get to take in the data variable and return
-the new formatted time as a JSON object.
-
 */
 
 const express = require('express');
@@ -27,6 +22,5 @@ app.get('/:time', (req, res) => {
   console.log('app.js', data);
   res.status(200).json(time(data.time));
 });
-
 
 app.listen(PORT);

@@ -21,6 +21,23 @@
       font-size: 36px;
     }
 
+    a {
+      text-decoration: none;
+      color: #c7254e;
+    }
+
+    a:visited {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    a:focus {
+      text-decoration: none;
+    }
+
     code {
       padding: 2px 4px;
       font-size: 90%;
@@ -59,9 +76,11 @@
       <article>
         <h1>Timestamp Microservice</h1>
         <h2>Example usage:</h2>
-        <code>123456</code>
+        <code><a href="/October 7, 2017">/October 7, 2017</a></code>
+        <br/>
+        <code><a href="/1507359600">/1507359600</a></code>
         <h2>Example output:</h2>
-        <code>123456</code>
+        <code>{ real: "October 07, 2017", unix: "1507359600" }</code>
       </article>
     </section>
 
